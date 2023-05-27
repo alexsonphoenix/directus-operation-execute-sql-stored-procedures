@@ -6,10 +6,13 @@ export default {
 		const { ServiceUnavailableException } = exceptions;
 		
 		database.raw(`EXEC ${stored_procedure_name};`)
-			.then((results) => res.json(results))
+			.then((results) => {
+				console.log('Success');
+			})
 			.catch((error) => {
 				throw new ServiceUnavailableException(error.message);
 			});
+		
 	},
 	
 };

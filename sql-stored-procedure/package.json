@@ -8,7 +8,6 @@
 		"directus-extension",
 		"directus-custom-operation"
 	],
-	"type": "module",
 	"directus:extension": {
 		"type": "operation",
 		"path": {
