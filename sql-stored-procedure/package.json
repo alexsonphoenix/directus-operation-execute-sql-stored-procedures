@@ -1,6 +1,6 @@
 {
 	"name": "directus-extension-sql-stored-procedure",
-	"description": "Please enter a description for your extension",
+	"description": "This operation allows you to execute a stored procedure in your SQL database",
 	"icon": "extension",
 	"version": "1.0.0",
 	"keywords": [

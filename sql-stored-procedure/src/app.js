@@ -1,18 +1,18 @@
 export default {
-	id: 'custom',
-	name: 'Custom',
+	id: 'sql-stored-procedure',
+	name: 'Execute SQL Stored Procedure',
 	icon: 'box',
-	description: 'This is my custom operation!',
-	overview: ({ text }) => [
+	description: 'Custom operation to execute SQL Stored Procedure ',
+	overview: ({ stored_procedure_name }) => [
 		{
-			label: 'Text',
-			text: text,
+			label: 'Stored Procedure Name',
+			stored_procedure_name: stored_procedure_name,
 		},
 	],
 	options: [
 		{
-			field: 'text',
-			name: 'Text',
+			field: 'stored_procedure_name',
+			name: 'Stored Procedure Name',
 			type: 'string',
 			meta: {
 				width: 'full',
